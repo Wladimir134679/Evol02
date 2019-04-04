@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.wdeath.game'
+version '0.2'
+
+sourceCompatibility = 1.8
+mainClassName = 'com.wdeath.game.evol02.LauncherApp'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.badlogicgames.gdx', name: 'gdx', version: '1.9.9'
+    compile group: 'com.badlogicgames.gdx', name: 'gdx-backend-lwjgl', version: '1.9.9'
+    compile "com.badlogicgames.gdx:gdx-platform:1.9.9:natives-desktop"
+    compile group: 'com.badlogicgames.ashley', name: 'ashley', version: '1.7.3'
+}
